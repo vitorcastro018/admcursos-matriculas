@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="authot" content="Vitor Castro">
+            <!-- Instagram: @vitorguicastro -->
+        <link rel="stylesheet" href="../CSS/cursos.css">
+        <script defer src="../JS/main_cursos.js"></script>
+
+        <title>Cursos - ADM Cursos e Treinamentos</title>
+    </head>
+    <body>
+        <header>
+            <img width="200x" style="margin: 10px auto; display: block;" src="../ASSETS/logo_adm_png.png" alt="">
+            <h1>Cursos Disponíveis</h1>
+        </header> 
+
+        <section>
+            <div class="cursos">
+                <img class="imagens_cursos" src="../ASSETS/informatica.png">
+                <p>Informática Empresarial</p>
+                <button onclick="informatica()" class="button_about">VER MAIS</button>
+            </div>
+            
+            <div class="cursos" id="adm">
+                <img class="imagens_cursos" src="../ASSETS/assistente-adm.png">
+                <p>Assistente Administrativo Completo</p>
+                <button onclick="assistenteadm()" class="button_about">VER MAIS</button>
+            </div>
+
+            <div class="cursos">
+                <img class="imagens_cursos" src="../ASSETS/classificador.png">
+                <p>Classificador De Grãos</p>
+                <button onclick="classificador()" class="button_about">VER MAIS</button>
+            </div>
+
+            <div class="cursos">
+                <img class="imagens_cursos" src="../ASSETS/ingles.png">
+                <p>Inglês</p>
+                <button onclick="ingles()" class="button_about">VER MAIS</button>
+            </div>
+
+            <div class="cursos">
+                <img class="imagens_cursos" src="../ASSETS/operador-empilhadeira.png">
+                <p>Operador De Empilhadeira</p>
+                <button onclick="operadorempilhadeira()" class="button_about">VER MAIS</button>
+            </div>
+
+            <div class="cursos">
+                <img class="imagens_cursos" src="../ASSETS/combos.png">
+                <p style="text-shadow: 1px 1px 2px orange;">Combos</p>
+                <button onclick="combos()" class="button_about" id="button_combos">VER COMBOS</button>
+            </div>
+
+        </section>
+
+        <footer>
+            <a style="display: block; margin: auto; text-decoration: none; text-align: center; color: green; margin-top: 50px;" href="https://wa.me/+5564999022411"><b>AJUDA</b></a>
+        </footer>
+    </body>
+</html>

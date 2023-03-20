@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.cursos{
+    background-color: white;
+    width: 270px;
+    height: 360px;
+    
+
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px gray;
+    margin-bottom: 10px;
+}
+
+.imagens_cursos{
+    width: 250px;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    margin: 10px auto;
+    padding-bottom: 10px;
+}
+
+.button_about{
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+
+    border-radius: 5px;
+    background-color: rgb(255, 94, 0);
+    border: none;
+    color: white;
+    
+
+}
+
+.button_about:focus{
+    width: 120px;
+    height: 35px;
+    transition: 0.2s;
+}
+
+#adm{
+    height: 380px;
+}
+
+#button_combos{
+    width: 160px;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../ASSETS/background-combo.png);
+    background-size: 120%;
+    margin: auto;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+.voltar, img{
+    background: none;
+    border: none;
+    width: 38px;
+    display: block;
+    cursor: pointer;
+}
+
+.matricula{
+    transition: 5s;
+    top: 80%;
+    right: 27%;
+    text-align: center;
+    display: inline;
+    position: absolute;
+
+    font-size: 15px;
+    width: 170px;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(31, 0, 141);
+    color: white;
+    margin: auto;
+    
+}
+
+.box_cursos{
+    width: 300px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: orangered;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+    border-radius: 20px 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+summary{
+    color: wheat;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+
+details[open] summary ~ * {
+    animation: sweep 1s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; transform: translateY(-10px)}
+    100%  {opacity: 1; transform: translateY(0)}
+  }

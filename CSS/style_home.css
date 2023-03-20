@@ -1,0 +1,219 @@
+/* Importações */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Estilos gerais da página */
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../ASSETS/background_home.jpg);
+    background-size: 100%;
+    margin-left: 0.5%
+    
+}
+
+/*  Cabeçalho  */
+
+header{
+    margin-top: -20px;
+    display: flex;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: black;
+    user-select: none;
+    
+
+}
+
+h2{
+
+    margin-left: 270px;
+    padding-top: 40px;
+    font-size: 35px;
+
+}
+
+/*  Corpo da página  */
+
+.Matrícula{
+    user-select: none;
+}
+
+
+/*  Títulos */
+h3{
+    font-size: 25px;
+
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+
+
+/*  Interação com usuário  */
+label{
+    display: block;
+    margin: 20px;
+    font-size: 23px;
+
+}
+
+input, select{
+    
+    width: 300px;
+    height: 30px;
+    padding-right: 1em;
+    font-size: large;
+
+    
+
+}
+
+#botão_enviar{
+    border-style: solid;
+    margin-top: 2%;
+    margin-left: 9%;
+    padding: 15px;
+    font-size: 18px
+
+}
+
+#observação{
+    margin-left: 1em;
+    height: 40px;
+    width: 30%;
+
+
+}
+
+optgroup{
+    display: none;
+
+}
+
+.final{
+    display: block;
+
+}
+
+
+
+
+
+/* Responsiviade */
+@media (max-width: 600px) {
+    /* Importações */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+        /* Estilos gerais da página */
+    
+
+    body{
+
+        font-family: 'Open Sans', sans-serif;
+        background-image: url(../ASSETS/background_home.jpg);
+        background-size: 100%;
+        margin: auto;
+    }
+
+    /*  Cabeçalho  */
+
+    header{
+        margin-top: -20px;
+        margin-left: 0%;
+        display: block;
+        border-bottom: solid;
+        border-width: 5px;
+        border-color: black;
+        text-align: center;
+        margin-bottom: 7%;
+
+        
+    }
+
+    h2{
+
+
+        margin-top: -46px;
+        margin-left: auto;
+        font-size: 35px;
+        margin-bottom: 2%;
+
+    }
+
+    /*  Corpo da página  */
+    
+    .Matrícula{
+        user-select: none;
+        
+    }
+
+    /*  Títulos */
+    h3{
+        font-size: 25px;
+        padding-left: 5px;
+        border-bottom: solid;
+        border-width: 1px;
+
+    }
+
+    p{
+        text-align: center;
+    }
+
+
+
+    /*  Interação com usuário  */
+    label{
+        display: block;
+        margin: 20px;
+        font-size: 23px;
+
+    }
+
+    input, select{
+        
+        width: 300px;
+        height: 30px;
+        padding-right: 1em;
+        font-size: large;
+
+        
+
+    }
+
+    #botão_enviar{
+        border-style: solid;
+        font-size: 18px;
+        margin-top: 15px;
+        margin: 15px auto;
+
+    }
+
+    #observação{
+        margin-left: 1em;
+        height: 40px;
+        width: 90%;
+
+
+    }
+
+    optgroup{
+        display: none;
+
+    }
+
+    .final{
+        display: block;
+
+    }
+
+
+}
+

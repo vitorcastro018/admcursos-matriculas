@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: rgb(7, 0, 34);
+    margin: auto;
+
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 35px;
+    user-select: none;
+}
+
+h1:hover{
+    color: greenyellow;
+    transition: 1s;
+    
+}
+
+form{
+    width: 300px;
+    margin: 200px auto;
+    text-align: center;
+
+}
+
+#botão{
+    background-color: rgb(219, 219, 219);
+    color: rgb(26, 26, 26);
+    cursor: pointer;
+
+}
+
+#botão:hover{
+    transition: 1s;
+    background-color: rgb(83, 83, 83);
+    color: greenyellow;
+    border-radius: 20px 20px 20px 20px;
+    border-color: greenyellow;
+
+}
+
+
+
+input{
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 35px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    border-bottom: solid;
+    outline: none;
+
+    border-color: rgb(152, 152, 152);
+    color: white;
+    
+
+
+}
+
+input:hover{
+    border-color: greenyellow;
+    transition: 1s;
+}
+
+input:enabled{
+    color: white;
+}
+
+
+@media (max-width: 600px){
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        
+        background-color: rgb(7, 0, 34);
+        background-size: auto;
+        text-align: center;
+        margin: auto;
+
+    }
+
+    h1{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 45px;
+    }
+
+    form{
+        width: 250px;
+        margin: 60% auto;
+        text-align: center;
+
+    }
+
+    #botão{
+        background-color: rgb(219, 219, 219);
+        color: rgb(26, 26, 26);
+        height: 32px;
+        
+    }
+
+    input{
+        display: block;
+        margin: 10px auto;
+        width: 250px;
+        height: 40px;
+        font-size: 20px;
+        background: none;
+        border: none;
+        border-bottom: solid;
+        outline: none;
+    
+        border-color: rgb(152, 152, 152);
+        color: white;
+        
+    
+    
+    }
+
+
+}

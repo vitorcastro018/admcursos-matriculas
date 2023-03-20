@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Vitor Castro">
+        <link rel="stylesheet" href="./CSS/style_home.css">
+        <link rel="icon" href="./imagens/logo_head_adm.svg">
+        <title>Efetuar Matrícula</title>
+
+    </head>
+    <body>
+        <a href="/CURSOS/cursos.html"><img width="40px" src="./ASSETS/voltar.png"></a>
+        <!--Cabeçalho da página-->
+        <header>
+            <h1><img draggable="false" src="./ASSETS/logo_adm_png.png"></h1>
+            <h2>Cadastro de Matrículas</h2>
+        </header>
+
+        <!--Corpo da página-->
+        <div class="Matrícula">
+            <form action="https://formsubmit.co/tiaggo.go@gmail.com" method="POST">
+            <!--Parte do formulário com dados dos alunos-->
+            <input type="hidden" name="_subject" value="Nova Matrícula">
+            <input type="hidden" name="_template" value="box">
+
+                <label id="texto_vendedor">Vendedor
+                    <select required name="Vendedor" id="Vendedor">
+                        
+                        <option selected value="">Selecione o vendedor</option>
+
+                        <option value="Neila Bianka">Neila Bianka Da Silva</option>
+                        <option value="Tiago Da Silva"> Tiago Da Silva Rodrigues</option>
+                        <option value="Raul Rodrigues">Raul Alves Rodrigues Junior</option>
+                        <option value="Daianne Rodrigues">Daianne Rodrigues Alves</option>
+                        <option value="Vitor Castro">Vitor Guimarães Rosa Castro</option>
+                        <option value="Alessandra Freitas">Alessandra Freitas</option>
+                    
+                    </select>
+                </label>
+                <p style="font-size: 15px">No caso de Combo, efetuar uma matricula para cada curso e especificar no campo "Observação".</p>
+                <h3 class="Dados_aluno">Dados do Aluno(a)</h3>
+                        
+                <label class="Dados_aluno">Nome do(a) aluno(a)
+                    <br>
+                    <input required id="nome_do_aluno"  name="Nome do aluno(a)" type="text" placeholder="Digite aqui">
+                </label>
+
+                <label class="Dados_aluno">RG
+                    <br>
+                    <input id="rg_aluno" name="RG do aluno" type="number" placeholder="Digitar somente números" ></label>
+
+                <label class="Dados_aluno">CPF 
+                    <br>
+                    <input id="cpf_aluno" name="CPF do aluno" type="number" placeholder="Digitar somente números"></label>
+                        
+                <label class="Dados_aluno">Data de nascimento 
+                    <br>
+                    <input required id="data_nascimento_aluno" name="Data de Nascimento do aluno" type="date"></label>
+                    
+                <label class="Dados_aluno">Naturalidade
+                    <br>
+                    <input required id="naturalidade_aluno" name="Naturalidade do Aluno" type="text" placeholder="Cidade/Estado" title="Estados somente a sigla Ex: Goiás (GO) ">
+                </label> 
+
+                <label class="Dados_aluno">CEP 
+                    <br>
+                    <input id="cep_aluno" name="CEP" type="text" placeholder="Digitar somente números"></label>
+                            
+                <label class="Dados_aluno">Endereço 
+                    <br>
+                    <input required id="endereço_aluno" name="Endereço" type="text" placeholder="Ex: Rua, Quadra, Lote"></label>
+
+                <label class="Dados_aluno">Bairro 
+                    <br>
+                    <input required id="bairro_aluno" name="Bairro" type="text" placeholder="Digite aqui"></label>
+
+                <label class="Dados_aluno">Número
+                    <br>
+                    <input  id="número_casa_aluno" name="Número" type="text" placeholder="Digitar somente números" title="Se não houver número, deixar em branco"></label>
+
+                <label class="Dados_aluno">Contato
+                    <br>
+                    <input required id="contato_aluno" name="Número de Contato do aluno(a)" type="tel" placeholder="(DDD) X XXXX-XXXX"></label>
+
+                <label class="Dados_aluno">Curso
+                    <br>
+                    <select required name="Curso" id="cursos" onchange="MostrarHorário() .value">
+                            
+                        <option selected>Selecione o curso desejado</option>
+                        <option value="INFO EMPRESARIAL">INFO EMPRESARIAL</option>
+                        <option value="ASS. ADM E FINANCEIRO/LOGÍSTICA E CONTROLE DE ESTOQUE">ASS. ADM E FINANCEIRO/LOGÍSTICA E CONTROLE DE ESTOQUE</option>
+                        <!--<option value="ASSIS. DE LOGÍSTICA E CONT. DE ESTOQUE">ASSIS. DE LOGÍSTICA E CONT. DE ESTOQUE</option> -->
+                        <!--<option value="ASSIS. DE FARMÁCIA E CLÍN. MÉDICAS">ASSIS. DE FARMÁCIA E CLÍN. MÉDICAS</option> -->
+                        <option value="CLASS. DE GRÃOS">CLASS. DE GRÃOS</option>
+                        <!--<option value="MANUTENÇÃO DE CEL E COMP.">MANUTENÇÃO DE CEL E COMP</option> -->
+                        <option value="MARKETING DIGITAL">MARKETING DIGITAL</option>
+                        <option value="MESTRE DE OBRAS">MESTRE DE OBRAS</option>
+                        <option value="OPERADOR DE EMPILHADEIRA">OPERADOR DE EMPILHADEIRA</option>
+                        <option value="ASS. SEGURANÇA NO TRABALHO">ASS. SEGURANÇA NO TRABALHO</option>
+                    </select>
+                </label>
+
+
+                <label class="Dados_aluno">Horário
+                    <br>
+                    <select  name="Horário" id="Horário">
+                        <option value="" selected>Selecione o horário</option>
+                        
+                        <optgroup id="Horários_Informática">
+                        
+                            <option value="SÁBADO 08:00 as 10:00">SÁBADO 08:00 as 10:00</option>
+                            <option value="SÁBADO 10:00 as 12:00">SÁBADO 10:00 as 12:00</option>
+                            <option value="SÁBADO 13:00 as 15:00">SÁBADO 13:00 as 15:00</option>
+                            <option value="SÁBADO 15:00 as 17:00">SÁBADO 15:00 as 17:00</option>
+                            <!-- <option value="SÁBADO 17:00 as 19:00">SÁBADO 17:00 as 19:00</option> -->
+
+                            <option value="SEGUNDA 08:00 as 10:00">SEGUNDA 08:00 as 10:00</option>
+                            <option value="SEGUNDA 10:00 as 12:00">SEGUNDA 10:00 as 12:00</option>
+                            <option value="SEGUNDA 14:00 as 16:00">SEGUNDA 14:00 as 16:00</option>
+                            <option value="SEGUNDA 16:00 as 18:00">SEGUNDA 16:00 as 18:00</option>
+                            <option value="SEGUNDA 19:00 as 21:00">SEGUNDA 19:00 as 21:00</option>
+
+                            <option value="TERÇA-FEIRA 08:00 as 10:00">TERÇA-FEIRA 08:00 as 10:00</option>
+                            <option value="TERÇA-FEIRA 10:00 as 12:00">TERÇA-FEIRA 10:00 as 12:00</option>
+                            <option value="TERÇA-FEIRA 14:00 as 16:00">TERÇA-FEIRA 14:00 as 16:00</option>
+                            <option value="TERÇA-FEIRA 16:00 as 18:00">TERÇA-FEIRA 16:00 as 18:00</option>
+                            <option value="TERÇA-FEIRA 19:00 as 21:00">TERÇA-FEIRA 19:00 as 21:00</option>
+
+                            <option value="QUARTA 08:00 as 10:00">QUARTA-FEIRA 08:00 as 10:00</option>
+                            <option value="QUARTA 10:00 as 12:00">QUARTA-FEIRA 10:00 as 12:00</option>
+                            <option value="QUARTA 14:00 as 16:00">QUARTA-FEIRA 14:00 as 16:00</option>
+                            <option value="QUARTA 16:00 as 18:00">QUARTA-FEIRA 16:00 as 18:00</option>
+                            <option value="QUARTA 19:00 as 21:00">QUARTA-FEIRA 19:00 as 21:00</option>
+
+                            <option value="QUINTA 08:00 as 10:00">QUINTA-FEIRA 08:00 as 10:00</option>
+                            <option value="QUINTA 10:00 as 12:00">QUINTA-FEIRA 10:00 as 12:00</option>
+                            <option value="QUINTA 14:00 as 16:00">QUINTA-FEIRA 14:00 as 16:00</option>
+                            <option value="QUINTA 16:00 as 18:00">QUINTA-FEIRA 16:00 as 18:00</option>
+                            <option value="QUINTA 19:00 as 21:00">QUINTA-FEIRA 19:00 as 21:00</option>
+
+                            <option value="SEXTA 08:00 as 10:00">SEXTA-FEIRA 08:00 as 10:00</option>
+                            <option value="SEXTA 10:00 as 12:00">SEXTA-FEIRA 10:00 as 12:00</option>
+                            <option value="SEXTA 14:00 as 16:00">SEXTA-FEIRA 14:00 as 16:00</option>
+                            <option value="SEXTA 16:00 as 18:00">SEXTA-FEIRA 16:00 as 18:00</option>
+                            <option value="SEXTA 19:00 as 21:00">SEXTA-FEIRA 19:00 as 21:00</option>
+                            
+
+                        </optgroup>
+
+                        <optgroup id="Horários_ADM_LOG">
+                            <option value="TERÇA 19:00 as 21:00">TERÇA 19:00 as 21:00</option>
+
+                            <option value="SÁBADO 08:00 as 10:00">SÁBADO 08:00 as 10:00</option>
+                        </optgroup>
+
+                        <!-- <optgroup id="Horários_Farmácia">
+                            <option value="SÁBADO 13:00 as 15:00">SÁBADO 13:00 as 15:00</option>
+                        </optgroup> -->
+
+                        <!-- <optgroup id="Horários_Logística">                        
+                            <option value="SEXTA 19:00 as 21:00">SEXTA 19:00 as 21:00</option>
+                        </optgroup> -->
+
+                        <optgroup id="Horários_Class_Grãos">                        
+                            <option value="SEGUNDA 19:00 as 21:00">SEGUNDA 19:00 as 22:00</option>
+
+                            <option value="SÁBADO 10:00 as 12:00">SÁBADO 10:00 as 12:00</option>
+                        </optgroup>
+
+                        <optgroup id="Horários_Manutenção">                        
+
+                        </optgroup>
+
+                        <optgroup id="Horários_Marketing">                        
+
+                        </optgroup>
+
+                        <optgroup id="Horários_MrObras" >                        
+
+                        </optgroup>
+
+                        <optgroup id="Horários_OPEmpilhadeira" >                        
+
+                        </optgroup>
+
+                        <optgroup id="Horários_AssisSegTrabalho" >                        
+
+                        </optgroup>
+
+                        
+
+                    </select>
+                </label>
+
+                
+
+                <p>Obs: Se o(a) aluno(a) for maior de idade,<br>deixar próximo formulário em branco.</p>
+                <!-- Dados do Responsável-->
+
+                <h3 class="Dados_responsável">Dados do Responsável</h3>
+                    
+                        
+                <label class="Dados_responsável">Nome do(a) Responsável 
+                    <br>
+                    <input id="nome_responsável" name="Nome do(a) Responsável" type="text" placeholder="Digite aqui" title="Se o aluno(a) for maior de idade, deixar em branco"></label>
+
+                <label class="Dados_responsável">RG 
+                    <br>
+                    <input id="rg_responsável" name="RG do Responsável" type="text" placeholder="Digite somente números" title="Se o aluno(a) for maior de idade, deixar em branco"></label>
+
+                <label class="Dados_responsável">CPF 
+                    <br>
+                    <input id="cpf_responsável" name="CPF do Responsável" type="text" placeholder="Digite somente números" title="Se o aluno(a) for maior de idade, deixar em branco"></label>
+                        
+                <label class="Dados_responsável">Data de nascimento 
+                    <br>
+                    <input id="data_nascimento_responsável" name="Data de Nascimento do Responsável" type="date" title="Se o aluno(a) for maior de idade, deixar em branco"></label>
+
+                <label class="Dados_Responsável">Naturalidade
+                    <br>
+                    <input id="naturalidade_responsável" name="Naturalidade do responsável" type="text" placeholder="Cidade/Estado" title="Estados somente a sigla Ex: Goiás (GO) ">
+                </label> 
+
+                <label class="Dados_responsável">Contato
+                    <br>
+                    <input id="contato_responsável" name="Número de Contato do responsável" type="text" placeholder="(DDD) X XXXX-XXXX">
+                </label>
+                
+                <input id="observação" class="final" name="Observação" type="text" placeholder="Observação" title="Se tiver alguma observação digitar aqui!">
+                <button type="submit" class="final" id="botão_enviar">Enviar matrícula</button>
+            
+            </form>
+                
+
+            
+            
+        </div>
+        <!-- <script defer src="./JS/script_wpp.js"></script> -->
+        <script defer src="./JS/main_home_Mostrar_Horário.js"></script>
+        
+    </body>
+</html>
